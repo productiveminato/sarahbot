@@ -29,8 +29,8 @@ export default class Command extends BaseCommand {
         }\n📆 *Release Date:* ${info.release_date || ''}`
         M.reply(
             await request.buffer(info?.cover_url as string),
-            MessageType.document,
-            Mimetype.mp4Audio,
+            MessageType.image,
+            undefined,
             undefined,
             caption
             // eslint-disable-next-line @typescript-eslint/no-explicit-any
