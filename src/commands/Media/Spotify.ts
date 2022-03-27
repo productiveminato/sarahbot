@@ -1,4 +1,4 @@
-import { MessageType } from '@adiwajshing/baileys'
+import { MessageType, Mimetype  } from '@adiwajshing/baileys'
 import MessageHandler from '../../Handlers/MessageHandler'
 import BaseCommand from '../../lib/BaseCommand'
 import request from '../../lib/request'
@@ -29,8 +29,8 @@ export default class Command extends BaseCommand {
         }\n📆 *Release Date:* ${info.release_date || ''}`
         M.reply(
             await request.buffer(info?.cover_url as string),
-            MessageType.image,
-            undefined,
+            MessageType.document,
+            Mimetype.mp4Audio,
             undefined,
             caption
             // eslint-disable-next-line @typescript-eslint/no-explicit-any
