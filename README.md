@@ -1,5 +1,5 @@
 <div align="center">
-<a href="https://github.com/iamherok/Cara_public"><img src="https://static.zerochan.net/Nakano.Yotsuba.full.3273169.png" alt="chitoge" border="0"></a>
+<a href="https://github.com/iamherok/Cara_public"><img src="https://i.ytimg.com/vi/1XTkds78fOw/maxresdefault.jpg" alt="chitoge" border="0"></a>
 
 # **Yotsuba : A WhatsApp BOT WITH RICH NSFW FEATURES BASED ON <a href="https://github.com/ShineiIchijo/Chitoge">CHITOGE</er></a></h1>**
 
