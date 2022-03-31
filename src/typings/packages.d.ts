@@ -29,3 +29,4 @@ declare module "discord-canvas";
 declare module "ordinal";
 declare module "images-generator";
 declare module "lolis.life";
+declare module "better-tord";
