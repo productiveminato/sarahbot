@@ -37,7 +37,7 @@ export default class Command extends BaseCommand {
 		if (amount > 20)
 			return void M.reply(`Do you want me to spam in this group?`);
 		const wall = new AnimeWallpaper();
-		const wallpaper = await wall.getAnimeWall4({ title: (term), type: "sfw", page: ((Math.random()*10)+2), })
+		const wallpaper = await wall.getAnimeWall4({ title: (term), type: "sfw", page: ((Math.random()*10)+1),})
 		if (!wallpaper)
 			return void (await M.reply(
 				`Couldn't find any matching term of wallpaper.`
