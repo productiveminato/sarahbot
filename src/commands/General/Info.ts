@@ -10,7 +10,7 @@ export default class Command extends BaseCommand {
 		super(client, handler, {
 			command: "info",
 			description: "Will display the info the bot",
-			category: "utils",
+			category: "general",
 			usage: `${client.config.prefix}info`,
 			baseXp: 0,
 		});
@@ -22,9 +22,9 @@ export default class Command extends BaseCommand {
                 const uban = await this.client.DB.user.countDocuments({ban: true});
 		const chats: any = this.client.chats
 			.all()
-			.filter((v) => !v.jid.endsWith && !v.archive)
+			.filter((v) => !v.read_only && !v.archive)
 			.map((v) => v.jid)
-			.map((jids) => (jids.includes("g.us") ? jids : name))
+			.map((jids) => (jids.includes("g.us") ? jids : null))
 			.filter((v) => v);
                 const pad = (s: any) => (s < 10 ? "0" : "") + s;
 		const formatTime = (seconds: any) => {
@@ -38,8 +38,9 @@ export default class Command extends BaseCommand {
             MessageType.video,
             Mimetype.gif,
             undefined,
-            `━━━❰ 🅨︎🅞︎🅣︎🅢︎🅤︎🅑︎🅐︎ ❱━━━\n\n🔮 *Groups:  ${
-				this.client.chats.all().filter(chat => chat.jid.endsWith('g.us')).length}*\n\n🚦 *Uptime: ${uptime()}*\n\n🦆 *My cute people: ${users}*\n\n💢 *Banned Users: ${uban}*\n\n\n`,
+            `━━━❰ 🅨︎🅞︎🅣︎🅢︎🅤︎🅑︎🅐︎ ❱━━━\n\n🔮 *Groups: ${
+				chats.length
+					}*\n\n🚦 *Uptime: ${uptime()}*\n\n🦆 *My cute people: ${users}*\n\n💢 *Banned Users: ${uban}*\n\n\n`,
                     undefined
                 ).catch((reason: any) =>
             M.reply(`✖ An error occurred. Please try again later.`))	
