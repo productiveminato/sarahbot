@@ -88,6 +88,7 @@
         "pokedex-promise-v2": "^3.3.2",
         "ptable": "^0.0.3",
         "qr-image": "^3.2.0",
+        "re2": "^1.17.4",
         "shentai": "^2.0.0",
         "spotifydl-core": "^0.2.0",
         "trace.moe.ts": "^1.3.8",
