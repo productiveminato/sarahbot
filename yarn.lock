@@ -2200,6 +2200,15 @@ dir-glob@^3.0.1:
   dependencies:
     path-type "^4.0.0"
 
+discord-image-generation@^1.4.13:
+  version "1.4.13"
+  resolved "https://registry.yarnpkg.com/discord-image-generation/-/discord-image-generation-1.4.13.tgz#883f10680a9c22cc1f492f60c14f2880e685d700"
+  integrity sha512-ncji2xgBbABuovBhsCW3dZ3yJNXjrmqngVQlygP+nwxg+VClewHQkmRxfDUhQnxgwZRrVmGB0r4Fpyx8RDaLng==
+  dependencies:
+    canvas "^2.6.1"
+    gifencoder "^2.0.1"
+    jimp "^0.16.1"
+
 docopt@~0.6.2:
   version "0.6.2"
   resolved "https://registry.yarnpkg.com/docopt/-/docopt-0.6.2.tgz#b28e9e2220da5ec49f7ea5bb24a47787405eeb11"
