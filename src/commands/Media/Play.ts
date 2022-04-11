@@ -40,6 +40,5 @@ export default class Command extends BaseCommand {
                 }
             })
             .catch((reason: Error) => M.reply(`✖ An error occurred. Please try again later.`))
-            Mimetype.mp4Audio
     }
 }
