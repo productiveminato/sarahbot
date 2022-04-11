@@ -1,4 +1,4 @@
-import { MessageType } from '@adiwajshing/baileys'
+import { MessageType, Mimetype } from '@adiwajshing/baileys'
 import MessageHandler from '../../Handlers/MessageHandler'
 import BaseCommand from '../../lib/BaseCommand'
 import WAClient from '../../lib/WAClient'
@@ -40,5 +40,6 @@ export default class Command extends BaseCommand {
                 }
             })
             .catch((reason: Error) => M.reply(`✖ An error occurred. Please try again later.`))
+            Mimetype.mp4Audio
     }
 }
