@@ -28,7 +28,7 @@ export default class Command extends BaseCommand {
 			for (const command of commands) {
 				const info = this.handler.commands.get(command);
 				if (!command) continue;
-				if (!info?.config?.category || info.config.category === "dev") continue;
+				if (!info?.config?.category|| info.config.category === 'creation' || info.config.category === "dev") continue;
 				if (
 					!info?.config?.category ||
 					(info.config.category === "nsfw" &&
