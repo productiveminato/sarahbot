@@ -17,50 +17,88 @@ export default class Command extends BaseCommand {
         })
     }
 
-    run = async (M: ISimplifiedMessage, parsedArgs: IParsedArgs): Promise<void> => {
-        if (M.quoted?.sender) M.mentioned.push(M.quoted.sender)
-            const user = M.mentioned[0] ? M.mentioned[0] : M.sender.jid
-         const n = [
-            './assets/Pikachu/ezgif-2-f9c4b6f8f1.mp4'
-        ]
-        let rin = n[Math.floor(Math.random() * n.length)]
-        if (!parsedArgs.joined) {
-            const commands = this.handler.commands.keys()
-            const categories: { [key: string]: ICommand[] } = {}
-            for (const command of commands) {
-                const info = this.handler.commands.get(command)
-                if (!command) continue
-                if (!info?.config?.category || info.config.category === 'games' || info.config.category === 'dev' || info.config.category === 'nsfw' || info.config.category === 'weeb' || info.config.category === 'moderation' || info.config.category === 'media' || info.config.category === 'utils' || info.config.category === 'general' || info.config.category === 'fun' || info.config.category === 'educative' || info.config.category === 'coding'|| info.config.category === 'nature') continue
-                if (
-					!info?.config?.category ||
-					(info.config.category === "nsfw" &&
-						!(await this.client.getGroupData(M.from)).nsfw)
-				)
-					continue;
-				if (Object.keys(categories).includes(info.config.category))
-					categories[info.config.category].push(info);
-				else {
-					categories[info.config.category] = [];
-					categories[info.config.category].push(info);
-				}
+    run = async (M: ISimplifiedMessage): Promise<void> => {
+		const chitoge =
+			"https://c.tenor.com/NvYI5wQNfgUAAAPo/nakano-yotsuba-pout.mp4";
+		return void this.client.sendMessage(
+			M.from,
+			{ url: chitoge },
+			MessageType.video,
+			{
+				quoted: M.WAMessage,
+				mimetype: Mimetype.gif,
+				caption: `
+「text maker command
+
+💠3dchrome ༄
+💠3ddeepsea ༄
+💠3dgradient ༄
+💠3drealistic ༄
+💠3dt ༄
+💠berry ༄
+💠blood ༄
+💠bokeh ༄
+💠bp ༄
+💠chocolate ༄
+💠cloud ༄
+💠devil ༄
+💠glitch ༄
+💠harrypotter ༄
+💠holographic ༄
+💠horror ༄
+💠loveneon ༄
+💠lovewall ༄
+💠luxury ༄
+💠magma ༄
+💠rainbow ༄
+💠snow ༄
+💠snowc ༄
+💠thunder ༄
+💠advanceglow ༄
+💠balloon ༄
+💠blackmetal ༄
+💠bluegem ༄
+💠bluejewl ༄
+💠bluesparkl ༄
+💠bronzeglitter ༄
+💠captain ༄
+💠cgraffiti ༄
+💠circuit ༄
+💠dglass ༄
+💠dropwater ༄
+💠equalizer ༄
+💠fiction ༄
+💠gavtar ༄
+💠gbluemetal ༄
+💠goldglitter ༄
+💠gradient ༄
+💠icetext ༄
+💠lgsliced ༄
+💠marbleslab ༄
+💠mataldgold ༄
+💠matrix ༄
+💠mgalaxy ༄
+💠pb ༄
+💠pencil ༄
+💠pinkglitter ༄
+💠purplegem ༄
+💠purpleglass ༄
+💠purpleglitter ༄
+💠purplejewl ༄
+💠redjewl ༄
+💠redsparkl ༄
+💠silverjewl ༄
+💠silvertext ༄
+💠spacetext ༄
+💠tneon ༄
+💠transformer ༄
+💠underwater ༄
+💠watercolor ༄
+💠wgraffiti ༄
+💠yellowjewl ༄
+💠firework༄```
+\n`,
 			}
-            let text = `
-╭─「text maker command」
-│⋊ ᴜꜱᴇʀ: *${M.sender.username}* 
-│⋊ ɴᴀᴍᴇ: PIKU
-╰────────────                            \n`
-            const keys = Object.keys(categories)
-            for (const key of keys)
-                text += ` \`\`\`\n💎 *${categories [
-                    key
-                ]
-                    .map((command) => command.config?.command)
-                    .join(' ༄\n\n 💎 ')}*\`\`\`\n`
-            return void this.client.sendMessage(M.from, { url: rin }, MessageType.video, {quoted:M.WAMessage,
-            mimetype: Mimetype.gif,
-            caption: `${text}` }
-            )
-        }
-        
-    }
+		);
+	};
 }
