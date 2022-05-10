@@ -1,7 +1,7 @@
 {
     
   "name": "Dexxy",
-  "description": "A WhatsApp Bot With Rich NSFW Features.",
+  "description": "A WhatsApp Bot With Rich NSFW Features made by Allygator.",
   "keywords": [
       "bot",
       "whatsapp",
@@ -14,7 +14,7 @@
   ],
   "website": "https://github.com/ShinNouzen/Chitoge#readme",
   "repository": "https://github.com//Whatup364/Chitoge.git",
-  "logo": "https://i.pinimg.com/736x/71/c2/8e/71c28e4ffd58c60aceacffab60db14cc.jpg",
+  "logo": "https://cdn.dribbble.com/users/508468/screenshots/14319479/downloads/clyde-01.jpg",
   "success_url": "/",
   "env": {
       "PREFIX": {
