@@ -21,9 +21,9 @@ export default class Command extends BaseCommand {
     run = async (M: ISimplifiedMessage, { joined }: IParsedArgs): Promise<void> => {
         
         if (!joined) return void M.reply('Provide the keywords you wanna search, Baka!')
-        const chitoge = joined.trim()
-        console.log(chitoge)
-        const { data } = await axios.get(`https://hanzz-web.herokuapp.com/api/igdl?url=${chitoge}`)
+        const dexxy = joined.trim()
+        console.log(dexxy)
+        const { data } = await axios.get(`https://hanzz-web.herokuapp.com/api/igdl?url=${dexxy}`)
         if (data.result.error) return void M.reply( await request.buffer(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEIJBLGeoanLhbUyzTNXLXXRPUDjUuDKIS8g&usqp=CAU`),
         MessageType.image,
                     undefined,
