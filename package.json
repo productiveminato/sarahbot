@@ -1,5 +1,5 @@
 {
-    "name": "dexxy",
+    "name": "Dexxy",
     "version": "3.0.0",
     "description": "A WhatsApp Bot With Rich Features.",
     "main": "dist/chitoge.js",
@@ -18,7 +18,7 @@
         "bot",
         "typescript",
         "whatsapp",
-        "dexxy"
+        "Dexxy"
     ],
     "author": "Synthesized Infinity & Shinei Ichijo",
     "license": "AGPL-3.0",
