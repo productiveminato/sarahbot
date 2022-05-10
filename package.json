@@ -1,7 +1,7 @@
 {
     "name": "Dexxy",
     "version": "3.0.0",
-    "description": "A WhatsApp Bot With Rich Features.",
+    "description": "A WhatsApp Bot With Rich Features made by Allygator.",
     "main": "dist/chitoge.js",
     "scripts": {
         "build": "tsc -p .",
