@@ -27,7 +27,7 @@ export default class Command extends BaseCommand {
 			{
 				quoted: M.WAMessage,
 				mimetype: Mimetype.gif,
-				caption: `⚡ *Dexxy* ⚡\n\n🍀 *Description: A WhatsApp Bot With Rich NSFW features made by Allygator.*\n\n🌐 *OFFICIAL BOT URL: https://github.com/ShineiIchijo/Chitoge* \n\n 📒 *Guide: https://github.com/ShineiIchijo/Chitoge-Guides* \n\n 👾 *BOT URL:https://github.com/DexterGlitch/Dexxy/* \n`,
+				caption: `⚡ *Dexxy* ⚡\n\n🍀 *Description: A WhatsApp Bot With Rich NSFW features made by Allygator.*\n\n🌐 *OFFICIAL BOT URL: https://github.com/ShineiIchijo/dexxy* \n\n 📒 *Guide: https://github.com/ShineiIchijo/dexxy-Guides* \n\n 👾 *BOT URL:https://github.com/DexterGlitch/Dexxy/* \n`,
 			}
 		);
 	};
