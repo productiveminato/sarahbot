@@ -1,7 +1,7 @@
 {
-    "name": "chitoge",
+    "name": "dexxy",
     "version": "3.0.0",
-    "description": "A WhatsApp Bot With Rich Anime Features.",
+    "description": "A WhatsApp Bot With Rich Features.",
     "main": "dist/chitoge.js",
     "scripts": {
         "build": "tsc -p .",
@@ -18,7 +18,7 @@
         "bot",
         "typescript",
         "whatsapp",
-        "chitoge"
+        "dexxy"
     ],
     "author": "Synthesized Infinity & Shinei Ichijo",
     "license": "AGPL-3.0",
