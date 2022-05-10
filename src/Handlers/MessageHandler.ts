@@ -28,7 +28,7 @@ export default class MessageHandler {
 				this.client.user.name ||
 				this.client.user.vname ||
 				this.client.user.short ||
-				"Chitoge";
+				"Dexxy";
 		} else if (M.WAMessage.key.fromMe) return void null;
 		    
 		if (M.from.includes("status")) return void null;
