@@ -18,7 +18,7 @@ export default class Command extends BaseCommand {
     run = async (M: ISimplifiedMessage, { joined }: IParsedArgs): Promise<void> => {
         if (!joined) return void M.reply('Give me a website link baka')
         const chitoge = joined.trim()
-        await axios.get(`https://leyscoders-api.herokuapp.com/api/tinyurl?url=${chitoge}&apikey=dappakntlll`)
+        await axios.get(`https://leyscoders-api.herokuapp.com/api/tinyurl?url=${dexxy}&apikey=dappakntlll`)
         .then((response) => {
                 // console.log(response);
                 const text = `🌐 *Your url* :${response.data.result}`
