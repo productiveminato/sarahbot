@@ -21,14 +21,14 @@ export default class Command extends BaseCommand {
             const n = [
             'https://telegra.ph/file/cc211d2b195ccbef82bff.mp4'
         ]
-        let chitoge = n[Math.floor(Math.random() * n.length)]
+        let dexxy = n[Math.floor(Math.random() * n.length)]
 	if (!parsedArgs.joined) {
 			const commands = this.handler.commands.keys();
 			const categories: { [key: string]: ICommand[] } = {};
 			for (const command of commands) {
 				const info = this.handler.commands.get(command);
 				if (!command) continue;
-				if (!info?.config?.category|| info.config.category === 'creation' || info.config.category === "dev") continue;
+				if (!info?.config?.category|| info.config.category === 'creation' || info.config.category === "dexxy") continue;
 				if (
 					!info?.config?.category ||
 					(info.config.category === "nsfw" &&
@@ -45,10 +45,10 @@ export default class Command extends BaseCommand {
             let text = `
 ╭─「(づ￣ 3￣)づ」
 │⋊ 𝕌𝕤𝕖𝕣: *${M.sender.username}*
-│⋊ ℕ𝕒𝕞𝕖: Yᴏᴛsᴜʙᴀ
+│⋊ ℕ𝕒𝕞𝕖: ALLYGATOR
 │⋊ ℙ𝕣𝕖𝕗𝕚𝕩: ${this.client.config.prefix}
 │⋊ 𝕆𝕨𝕟𝕖𝕣: *${this.client.config.prefix}mod*
-│⋊ 𝕆𝕗𝕗𝕚𝕔𝕚𝕒𝕝 𝔾𝕣𝕠𝕦𝕡: http://gg.gg/Piku-and-yotsuba-support
+│⋊ 𝕆𝕗𝕗𝕚𝕔𝕚𝕒𝕝 𝔾𝕣𝕠𝕦𝕡: http://gg.gg/dexxy and allygator-support
 ╰────────────┈平和                            \n\n`
             const keys = Object.keys(categories)
             for (const key of keys)
@@ -57,12 +57,12 @@ export default class Command extends BaseCommand {
 	         )} 』*\n❐ \`\`\`${categories[key]
                     .map((command) => command.config?.command)
                     .join(', ')}\`\`\`\n\n`
-            return void this.client.sendMessage(M.from, { url: chitoge }, MessageType.video, {quoted:M.WAMessage,
+            return void this.client.sendMessage(M.from, { url: dexxy }, MessageType.video, {quoted:M.WAMessage,
             mimetype: Mimetype.gif,
             caption: `${text} 
- ──❅┈[ 𝒀𝒐𝒕𝒔𝒖𝒃𝒂 𝑩𝒐𝒕 ]┈❅───
+ ──❅┈[ Allygator 𝑩𝒐𝒕 ]┈❅───
 ┌────────────┈❅
-│   🧨 YᴏᴛsUʙᴀ
+│   🧨 Allygator
 │   ©️ ՏYᑎTᕼᗴՏIᘔᗴᗪ IᑎᖴIᑎITY
 └────────────┈⁂
 ❅┈[𝐇𝐚𝐯𝐞 𝐆𝐫𝐞𝐚𝐭 𝐃𝐚𝐲]┈❅
