@@ -1,5 +1,5 @@
 <div align="center">
-<a href="https://github.com/iamherok/Cara_public"><img src="https://i.ytimg.com/vi/1XTkds78fOw/maxresdefault.jpg" alt="chitoge" border="0"></a>
+<a href="https://github.com/iamherok/Cara_public"><img src="https://i.ibb.co/ngRn4Cz/tumblr-66e82dde59820896965b5027b92c86e6-5ee4cc46-540.jpg" alt="dexxy" border="0"></a>
 
 # **Dexxy : A WhatsApp BOT WITH RICH NSFW FEATURES MADE BY <a href="https://github.com/ShineiIchijo/Chitoge">ALLYGATOR</er></a></h1>**
 
