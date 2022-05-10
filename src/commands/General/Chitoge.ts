@@ -12,22 +12,22 @@ export default class Command extends BaseCommand {
 			command: "dexxy",
 			description: "Displays the info",
 			category: "general",
-			usage: `${client.config.prefix}yotsuba`,
+			usage: `${client.config.prefix}dexxy`,
 			baseXp: 2000,
 		});
 	}
 
 	run = async (M: ISimplifiedMessage): Promise<void> => {
-		const chitoge =
+		const dexxy =
 			"https://tenor.com/view/nft-marketing-nft-gorillas-third-eye-apes-gif-24529839.mp4";
 		return void this.client.sendMessage(
 			M.from,
-			{ url: chitoge },
+			{ url: dexxy },
 			MessageType.video,
 			{
 				quoted: M.WAMessage,
 				mimetype: Mimetype.gif,
-				caption: `⚡ *Dexxy* ⚡\n\n🍀 *Description: A WhatsApp Bot With Rich NSFW features made by Allygator.*\n\n🌐 *OFFICIAL BOT URL: https://github.com/ShineiIchijo/Chitoge* \n\n 📒 *Guide: https://github.com/ShineiIchijo/Chitoge-Guides* \n\n 👾 *BOT URL:https://github.com/Whatup364/Yotsuba-Bot* \n`,
+				caption: `⚡ *Dexxy* ⚡\n\n🍀 *Description: A WhatsApp Bot With Rich NSFW features made by Allygator.*\n\n🌐 *OFFICIAL BOT URL: https://github.com/ShineiIchijo/Chitoge* \n\n 📒 *Guide: https://github.com/ShineiIchijo/Chitoge-Guides* \n\n 👾 *BOT URL:https://github.com/DexterGlitch/Dexxy/* \n`,
 			}
 		);
 	};
