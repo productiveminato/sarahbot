@@ -40,7 +40,7 @@ export default class Command extends BaseCommand {
     if (flags.includes("--s") || flags.includes("--sticker")) {
       const sticker: any = await new Sticker(random, {
         pack: "READ QUOTED MESSAGE",
-        author: "🌟 Chitoge 🌟",
+        author: "🌟 Dexxy 🌟",
         quality: 90,
         type: "default",
         categories: ["🎊"],
@@ -53,9 +53,9 @@ export default class Command extends BaseCommand {
       ));
     } else if (flags.includes("--h") || flags.includes("--hide")) {
       return void (await M.reply(
-        `*🎀 Group: ${M.groupMetadata?.subject}*\n🎏 *Members: ${
+        `*⚡ Group: ${M.groupMetadata?.subject}*\n🎐 *Members: ${
           members.length
-        }*\n📢 *Announcer: @${M.sender.jid.split("@")[0]}*\n🧧 *Tags: HIDDEN*`,
+        }*\n📢 *Init: @${M.sender.jid.split("@")[0]}*\n🧧 *Tags: HIDDEN*`,
         undefined,
         undefined,
         M.groupMetadata?.participants.map((user) => user.jid)
@@ -91,9 +91,9 @@ export default class Command extends BaseCommand {
         if (k.isAdmin) continue;
         metadata.others.push(k.jid);
       }
-      let text = `*🎀 Group: ${M.groupMetadata?.subject}*\n🎏 *Members: ${
+      let text = `*⚡ Group: ${M.groupMetadata?.subject}*\n🎫 *Members: ${
         members.length
-      }*\n📢 *Announcer: @${M.sender.jid.split("@")[0]}*\n🧧 *Tags:*`;
+      }*\n📢 *Init: @${M.sender.jid.split("@")[0]}*\n🧧 *Tags:*`;
       if (metadata.mods.length > 0) {
         for (const Mods of metadata.mods) {
           text += `\n🏅 *@${Mods.split("@")[0]}*`;
@@ -110,7 +110,7 @@ export default class Command extends BaseCommand {
       if (metadata.others.length > 0) {
         text += `\n`;
         for (const others of metadata.others) {
-          text += `\n🎗 *@${others.split("@")[0]}*`;
+          text += `\n🥇 *@${others.split("@")[0]}*`;
         }
       }
       return void M.reply(
