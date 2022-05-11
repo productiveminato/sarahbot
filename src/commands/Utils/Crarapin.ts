@@ -24,9 +24,9 @@ export default class Command extends BaseCommand {
 	): Promise<void> => {
 		if (!joined)
 			return void (await M.reply(`Give me a term to search, Baka!`));
-		const dexxy: any = joined.trim().split("|");
-		const term: string = dexxy[0];
-		const amount: number = dexxy[1];
+		const chitoge: any = joined.trim().split("|");
+		const term: string = chitoge[0];
+		const amount: number = chitoge[1];
 		if (!amount)
 			return void M.reply(
 				`Give me the number , Baka!\n\nExample: *${this.client.config.prefix}pin tomioka|5*`
@@ -39,7 +39,7 @@ export default class Command extends BaseCommand {
         MessageType.image,
                     undefined,
                     undefined,
-                    `404 Error can not find the anime *${dexxy}*`,
+                    `404 Error can not find the anime *${chitoge}*`,
                     undefined
                 )
         const buffer = await request.buffer(data.result[Math.floor(Math.random() * data.result.length)]).catch((e) => {
