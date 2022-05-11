@@ -62,7 +62,7 @@ export default class Command extends BaseCommand {
             caption: `${text} 
  ──❅┈[ ALLYGATOR 𝑩𝒐𝒕 ]┈❅───
 ┌────────────┈❅
-│   🧨 YᴏᴛsUʙᴀ
+│   🍁𝗔𝗹𝗹𝗬𝗴𝗔𝘁𝗢𝗿
 │   ©️ ՏYᑎTᕼᗴՏIᘔᗴᗪ IᑎᖴIᑎITY
 └────────────┈⁂
 ❅┈[𝐇𝐚𝐯𝐞 𝐆𝐫𝐞𝐚𝐭 𝐃𝐚𝐲]┈❅
