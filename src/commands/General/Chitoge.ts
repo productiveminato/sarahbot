@@ -12,17 +12,17 @@ export default class Command extends BaseCommand {
 			command: "dexxy",
 			description: "Displays the info",
 			category: "general",
-			usage: `${client.config.prefix}dexxy`,
+			usage: `${client.config.prefix}chitoge`,
 			baseXp: 2000,
 		});
 	}
 
 	run = async (M: ISimplifiedMessage): Promise<void> => {
-		const dexxy =
+		const chitobe =
 			"https://tenor.com/view/nft-marketing-nft-gorillas-third-eye-apes-gif-24529839.mp4";
 		return void this.client.sendMessage(
 			M.from,
-			{ url: dexxy },
+			{ url: chitoge },
 			MessageType.video,
 			{
 				quoted: M.WAMessage,
