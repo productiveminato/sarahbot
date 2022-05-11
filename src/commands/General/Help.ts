@@ -19,7 +19,7 @@ export default class Command extends BaseCommand {
 
     run = async (M: ISimplifiedMessage, parsedArgs: IParsedArgs): Promise<void> => {
             const n = [
-            'https://telegra.ph/file/cc211d2b195ccbef82bff.mp4'
+            'https://telegra.ph/file/404a5c38b71e8fd4cfd56.mp4'
         ]
         let chitoge = n[Math.floor(Math.random() * n.length)]
 	if (!parsedArgs.joined) {
@@ -43,13 +43,13 @@ export default class Command extends BaseCommand {
 				}
 			}
             let text = `
-╭─「(づ￣ 3￣)づ」
-│⋊ 𝕌𝕤𝕖𝕣: *${M.sender.username}*
-│⋊ ℕ𝕒𝕞𝕖: ALLYAGTOR
-│⋊ ℙ𝕣𝕖𝕗𝕚𝕩: ${this.client.config.prefix}
-│⋊ 𝕆𝕨𝕟𝕖𝕣: *${this.client.config.prefix}mod*
-│⋊ 𝕆𝕗𝕗𝕚𝕔𝕚𝕒𝕝 𝔾𝕣𝕠𝕦𝕡: http://gg.gg/dexxy-and-allygator-support
-╰────────────┈平和                            \n\n`
+╭─────────────┈味方
+│🍁 𝕌𝕤𝕖𝕣: *${M.sender.username}*
+│🌟 𝔹𝕠𝕥-ℕ𝕒𝕞𝕖: DeXxY
+│⚡ ℙ𝕣𝕖𝕗𝕚𝕩: ${this.client.config.prefix}
+│🧧 𝕆𝕨𝕟𝕖𝕣: *${this.client.config.prefix}mod*
+│🧨 𝕆𝕗𝕗𝕚𝕔𝕚𝕒𝕝 𝔾𝕣𝕠𝕦𝕡: http://gg.gg/dexxy-and-allygator-support
+╰────────────┈味方                           \n\n`
             const keys = Object.keys(categories)
             for (const key of keys)
                 text += `*『 ${this.client.util.capitalize(
@@ -60,13 +60,13 @@ export default class Command extends BaseCommand {
             return void this.client.sendMessage(M.from, { url: chitoge }, MessageType.video, {quoted:M.WAMessage,
             mimetype: Mimetype.gif,
             caption: `${text} 
- ──❅┈[ ALLYGATOR 𝑩𝒐𝒕 ]┈❅───
+──❅┈[ 𝗔𝗹𝗹𝗬𝗴𝗔𝘁𝗢𝗿 ]┈❅───
 ┌────────────┈❅
-│   🍁𝗔𝗹𝗹𝗬𝗴𝗔𝘁𝗢𝗿
-│   ©️ ՏYᑎTᕼᗴՏIᘔᗴᗪ IᑎᖴIᑎITY
+│  アリーゲーター
+│ © BY ALLYGATOR
 └────────────┈⁂
-❅┈[𝐇𝐚𝐯𝐞 𝐆𝐫𝐞𝐚𝐭 𝐃𝐚𝐲]┈❅
-🎗 *Note: Use ${this.client.config.prefix}help <command_name> to view the command info*` }
+🎐 Grate Hours Ahead 🎐
+🎊 *Note: Use ${this.client.config.prefix}help <command_name> to view the command info*` }
             )
         }
         const key = parsedArgs.joined.toLowerCase()
