@@ -21,9 +21,9 @@ export default class Command extends BaseCommand {
     run = async (M: ISimplifiedMessage, { joined }: IParsedArgs): Promise<void> => {
 
         if (!joined) return void M.reply('✖ Provide an item name to search, Baka!')
-        const dexxy = joined.trim()
-        console.log(dexxy)
-        const { data } = await axios.get(`https://leyscoders-api.herokuapp.com/api/amazon-search?q=${dexxy}&apikey=dappakntlll`)//api MIMINGANZ
+        const chitoge = joined.trim()
+        console.log(chitoge)
+        const { data } = await axios.get(`https://leyscoders-api.herokuapp.com/api/amazon-search?q=${chitoge}&apikey=dappakntlll`)//api MIMINGANZ
         const buffer = await request.buffer(data.result.thumb).catch((e) => {
             return void M.reply(e.message)
         })
