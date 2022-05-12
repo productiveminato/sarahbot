@@ -93,7 +93,7 @@ export default class MessageHandler {
 			)}`
 		   );
 			if (!command)
-			return void M.reply( await request.buffer(`https://c.tenor.com/uPVJO4UsB0MAAAPo/yotsuba-nakano-laugh.mp4`),
+			return void M.reply( await request.buffer(`https://c.tenor.com/J3t5j-PJq8gAAAPo/demon-snapping.mp4`),
                     MessageType.video,
                     Mimetype.gif,
                     undefined,
