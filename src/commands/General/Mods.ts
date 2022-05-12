@@ -21,7 +21,7 @@ export default class Command extends BaseCommand {
         filteredMap.forEach(
             (user, index) =>
                 (text += `#${index + 1}\n🎫 *Username: ${
-                    user.notify || user.vname || user.name || 'null'
+                    user.notify || user.vname || user.name || '🐊ɹ∀ʍN∀ʞ ┴N∀HSIN'
                 }*\n🌟 *Contact: https://wa.me/+${user?.jid?.split('@')[0]}*\n\n`)
         )
         text += `\n⚡ Dexxy ⚡ `
