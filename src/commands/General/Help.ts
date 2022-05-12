@@ -65,7 +65,7 @@ export default class Command extends BaseCommand {
 │  アリーゲーター
 │ © BY ALLYGATOR
 └────────────┈⁂
-🎐 Grate Hours Ahead 🎐
+🎐 Great Hours Ahead 🎐
 🎊 *Note: Use ${this.client.config.prefix}help <command_name> to view the command info*` }
             )
         }
