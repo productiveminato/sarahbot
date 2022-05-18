@@ -19,7 +19,7 @@ export default class Command extends BaseCommand {
 
     run = async (M: ISimplifiedMessage, parsedArgs: IParsedArgs): Promise<void> => {
             const n = [
-            'https://telegra.ph/file/404a5c38b71e8fd4cfd56.mp4'
+            'https://c.tenor.com/ym2raobKRlEAAAPo/kurumi-tokisaki-kurumi.mp4'
         ]
         let chitoge = n[Math.floor(Math.random() * n.length)]
 	if (!parsedArgs.joined) {
@@ -45,10 +45,10 @@ export default class Command extends BaseCommand {
             let text = `
 ╭─────────────┈味方
 │🍁 𝕌𝕤𝕖𝕣: *${M.sender.username}*
-│🌟 𝔹𝕠𝕥-ℕ𝕒𝕞𝕖: DeXxY
+│🌟 𝔹𝕠𝕥-ℕ𝕒𝕞𝕖: KuRuMi
 │⚡ ℙ𝕣𝕖𝕗𝕚𝕩: ${this.client.config.prefix}
 │🧧 𝕆𝕨𝕟𝕖𝕣: *${this.client.config.prefix}mod*
-│🧨 𝕆𝕗𝕗𝕚𝕔𝕚𝕒𝕝 𝔾𝕣𝕠𝕦𝕡: http://gg.gg/dexxy-and-allygator-support
+│🧨 𝕆𝕗𝕗𝕚𝕔𝕚𝕒𝕝 𝔾𝕣𝕠𝕦𝕡: 
 ╰────────────┈味方                           \n\n`
             const keys = Object.keys(categories)
             for (const key of keys)
@@ -60,10 +60,10 @@ export default class Command extends BaseCommand {
             return void this.client.sendMessage(M.from, { url: chitoge }, MessageType.video, {quoted:M.WAMessage,
             mimetype: Mimetype.gif,
             caption: `${text} 
-──❅┈[ 𝗔𝗹𝗹𝗬𝗴𝗔𝘁𝗢𝗿 ]┈❅───
+──❅┈[ 複| ᴋᴜʀᴜᴍɪ ツ ]┈❅───
 ┌────────────┈❅
-│  アリーゲーター
-│ © BY ALLYGATOR
+│  ➢Kurumi
+│ © BY ᴍɪɴᴀᴛᴏ ᴠɪ ʙʀɪᴛᴀɴɴɪᴀ
 └────────────┈⁂
 🎐 Great Hours Ahead 🎐
 🎊 *Note: Use ${this.client.config.prefix}help <command_name> to view the command info*` }
