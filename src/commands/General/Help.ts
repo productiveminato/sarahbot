@@ -47,7 +47,7 @@ export default class Command extends BaseCommand {
 │🍁 𝕌𝕤𝕖𝕣: *${M.sender.username}*
 │🌟 𝔹𝕠𝕥-ℕ𝕒𝕞𝕖: KuRuMi
 │⚡ ℙ𝕣𝕖𝕗𝕚𝕩: ${this.client.config.prefix}
-│🧧 𝕆𝕨𝕟𝕖𝕣: *${this.client.config.prefix}mod*
+│🧧 𝕆𝕨𝕟𝕖𝕣: ᎷＩN么ᎢＯ⁴⚡
 │🧨 𝕆𝕗𝕗𝕚𝕔𝕚𝕒𝕝 𝔾𝕣𝕠𝕦𝕡: 
 ╰────────────┈味方                           \n\n`
             const keys = Object.keys(categories)
