@@ -38,9 +38,9 @@ export default class Command extends BaseCommand {
             MessageType.video,
             Mimetype.gif,
             undefined,
-            `━━━❰ 𝐃𝐞𝐱𝐱𝐲 ❱━━━\n\n🔮 *Groups: ${
+            `━━━❰ 𝗸𝘂𝗿𝘂𝗺𝗶 ❱━━━\n\n🎩 *Groups: ${
 				chats.length
-					}*\n\n🚦 *Uptime: ${uptime()}*\n\n🦆 *My DawGs: ${users}*\n\n💢 *Banned Users: ${uban}*\n\n\n`,
+					}*\n\n⌚ *Uptime: ${uptime()}*\n\n👤 *My KaWaii users: ${users}*\n\n💢 *Banned Users: ${uban}*\n\n\n`,
                     undefined
                 ).catch((reason: any) =>
             M.reply(`✖ An error occurred. Please try again later.`))	
