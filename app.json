@@ -1,7 +1,7 @@
 {
     
-  "name": "Dexxy",
-  "description": "A WhatsApp Bot With Rich NSFW Features made by Allygator.",
+  "name": "Kurumi",
+  "description": "A WhatsApp Bot With Rich NSFW Features made by Minato vi britannia.",
   "keywords": [
       "bot",
       "whatsapp",
@@ -14,7 +14,7 @@
   ],
   "website": "https://github.com/ShinNouzen/Chitoge#readme",
   "repository": "https://github.com//Whatup364/Chitoge.git",
-  "logo": "https://cdn.dribbble.com/users/508468/screenshots/14319479/downloads/clyde-01.jpg",
+  "logo": "https://images2.alphacoders.com/688/688004.jpg",
   "success_url": "/",
   "env": {
       "PREFIX": {
