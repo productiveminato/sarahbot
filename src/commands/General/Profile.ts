@@ -35,30 +35,30 @@ export default class Command extends BaseCommand {
         } catch (err) {
             M.reply(`Profile Picture not Accessible of ${username}`)
             pfp =
-                'https://www.linkpicture.com/q/OIP-depositphotos-bgremover.png'
+                'shorturl.at/iAEMY'
         }
         const exp = (await this.client.getUser(user)).Xp
         let role: string;
 				if (exp < 500) {
-					role = "🌸 Citizen";
+					role = "🌸 Ultra Noob";
 				} else if (exp < 1000) {
-					role = "🔎 Cleric";
+					role = "🔎 Kinda Noob";
 				} else if (exp < 2000) {
-					role = "🔮 Wizard";
+					role = "🔮 Noob";
 				} else if (exp < 5000) {
-					role = "♦️ Mage";
+					role = "♦️ Kinda PRO";
 				} else if (exp < 10000) {
-					role = "🎯 Noble";
+					role = "🎯 hmm PRO";
 				} else if (exp < 25000) {
-					role = "✨ Elite";
+					role = "✨ PRO";
 				} else if (exp < 50000) {
-					role = "🔶️ Ace";
+					role = "🔶️ Normie Hero";
 				} else if (exp < 75000) {
 					role = "🌀 Hero";
 				} else if (exp < 100000) {
-					role = "💎 Supreme";
+					role = "💎 Legend";
 				} else {
-					role = "❄️ Mystic";
+					role = "❄️ AKHAANDD LEGEEND";
 				}
 
 				let level: number;
