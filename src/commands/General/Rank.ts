@@ -34,30 +34,30 @@ export default class Command extends BaseCommand {
 		} catch (err) {
 			M.reply(`Profile Picture not Accessible of ${username}`);
 			pfp =
-				"https://cdn.donmai.us/original/ab/5e/ab5e2ec951546e5df432c9233ef9ab8a.jpg";
+				"shorturl.at/iAEMY";
 		}
 		const exp = (await this.client.getUser(user)).Xp;
 		let role: string;
 		if (exp < 500) {
-			role = "🌸 Citizen";
+			role = "🌸 Ultra Noob";
 		} else if (exp < 1000) {
-			role = "🔎 Cleric";
+			role = "🔎 Kinda Noob";
 		} else if (exp < 2000) {
-			role = "🔮 Wizard";
+			role = "🔮 Noob";
 		} else if (exp < 5000) {
-			role = "♦️ Mage";
+			role = "♦️ Kinda Pro";
 		} else if (exp < 10000) {
-			role = "🎯 Noble";
+			role = "🎯 HMM PRO";
 		} else if (exp < 25000) {
-			role = "✨ Elite";
+			role = "✨ PRO";
 		} else if (exp < 50000) {
-			role = "🔶️ Ace";
+			role = "🔶️ PRO";
 		} else if (exp < 75000) {
 			role = "🌀 Hero";
 		} else if (exp < 100000) {
-			role = "💎 Supreme";
+			role = "💎 Super Hero";
 		} else {
-			role = "❄️ Mystic";
+			role = "❄️ LEGEND";
 		}
 		// eslint-disable-next-line @typescript-eslint/no-explicit-any
 		let level: number;
@@ -117,9 +117,9 @@ export default class Command extends BaseCommand {
 			.setDiscriminator("0007")
 			.setBackground("COLOR", "#000000");
 		rank.build({}).then((rankcard) => {
-			const text = `🏮 *Username: ${username}*\n\n〽️ *Level: ${level}*\n\n⭐ *Exp: ${
+			const text = `🐱‍💻 *Username: ${username}*\n\n💻 *Level: ${level}*\n\n⭐ *Exp: ${
 				exp || 0
-			} / ${required}*\n\n💫 *Role: ${role}*\n\n`;
+			} / ${required}*\n\n✨ *Role: ${role}*\n\n`;
 			M.reply(
 				rankcard,
 				MessageType.image,
