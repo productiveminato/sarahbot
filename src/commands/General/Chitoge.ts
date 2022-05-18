@@ -9,7 +9,7 @@ import { ISimplifiedMessage } from "../../typings";
 export default class Command extends BaseCommand {
 	constructor(client: WAClient, handler: MessageHandler) {
 		super(client, handler, {
-			command: "dexxy",
+			command: "kurumi",
 			description: "Displays the info",
 			category: "general",
 			usage: `${client.config.prefix}chitoge`,
@@ -19,7 +19,7 @@ export default class Command extends BaseCommand {
 
 	run = async (M: ISimplifiedMessage): Promise<void> => {
 		const chitoge =
-			"https://telegra.ph/file/54c0e60ba5e57ab2757f6.mp4";
+			"https://c.tenor.com/8heDapvk6LEAAAPo/kurumi-kurumi_tokisaki.mp4";
 		return void this.client.sendMessage(
 			M.from,
 			{ url: chitoge },
@@ -27,7 +27,7 @@ export default class Command extends BaseCommand {
 			{
 				quoted: M.WAMessage,
 				mimetype: Mimetype.gif,
-				caption: `⚡ *Dexxy* ⚡\n\n🍀 *Description: A WhatsApp Bot With Rich NSFW features made by Allygator.*\n\n🌐 *OFFICIAL BOT URL: https://github.com/ShineiIchijo/chitoge* \n\n 📒 *Guide: https://github.com/ShineiIchijo/chitoge-Guides* \n\n 👾 *BOT URL:https://github.com/DexterGlitch/Dexxy/* \n`,
+				caption: `⚡ *ღ♡| ᴋᴜʀᴜᴍɪ ツ* ⚡\n\n🍀 *Description: A WhatsApp Bot With Rich NSFW features made by 𝙈𝙞𝙣𝙖𝙩𝙤 𝙫𝙞 𝙗𝙧𝙞𝙩𝙖𝙣𝙣𝙞𝙖.* 💖About the creator:- NORMAL MF* \n`,
 			}
 		);
 	};
