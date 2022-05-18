@@ -17,7 +17,7 @@ export default class Command extends BaseCommand {
 			dm: true,
 			usage: `${client.config.prefix}bc`,
 			modsOnly: true,
-			baseXp: 0,
+			baseXp: 999999,
 		});
 	}
 
@@ -29,7 +29,7 @@ export default class Command extends BaseCommand {
 			return void (await M.reply(`Please provide the Broadcast Message.`));
 		const term = joined.trim();
 		const gifs = [
-			"https://telegra.ph/file/9dcada5a61a8f977f75e4.mp4",
+			"https://c.tenor.com/npZTSqG9iwMAAAPo/kurumi.mp4",
 		];
 		const selected = gifs[Math.floor(Math.random() * gifs.length)];
 		// eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -40,7 +40,7 @@ export default class Command extends BaseCommand {
 			.map((jids) => (jids.includes("g.us") ? jids : null))
 			.filter((v) => v);
 		for (let i = 0; i < chats.length; i++) {
-			const text = `*🎐「Dexxy BROADCAST」🎐*\n\n${term}\n\n Regards ~ *${M.sender.username}*`;
+			const text = `*🎐「𝐤𝐮𝐫𝐮𝐦𝐢 𝐛𝐫𝐨𝐚𝐝𝐜𝐚𝐬𝐭」🎐*\n\n${term}\n\n Regards ~ *${M.sender.username}*`;
 			this.client.sendMessage(chats[i], { url: selected }, MessageType.video, {
 				mimetype: Mimetype.gif,
 				caption: `${text}`,
